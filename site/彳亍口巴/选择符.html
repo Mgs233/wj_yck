@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{background-color:yellow; margin:0; padding:0;}
+		[class="wrap border"]{border-radius:50%;}  /*属性选择符*/
+		.border{border:3px solid blue;}
+		.wrap{width:1000px;}
+		#top,#nav,#banner{font-weight:bold; color:red;}
+		#top{height:100px; background-color:grey; border-radius:20%}
+		#nav{height:58px; background-color:black;}
+		#banner{height:400px; background-color:pink;}
+		#news01 .content{width:500px; height:200px; background-color:orange;}
+		a:link{color:yellow;}  
+		a:visited{color:blue;}
+		a:hover{color:pink;}
+		a:active{color:grey;}
+	</style>
+</head>
+<body>  <!-- !important > 内联样式表（行间样式）> id > class | 属性 | 伪类  | 伪元素 > 标签(类型)> 通配符 -->
+		<!-- Infinity   >        1000         > 100 >             10               >    1   >   0  -->                        
+	<div id="top" class="wrap border">5555</div>
+	<div id="nav" class="wrap border">666666666666</div> 
+	<div id="banner" class="wrap">44444444</div>
+	<div id="news">
+		<div class="content">111111111111</div>
+	</div>
+	<div id="news01">	
+		<div class="content">222222222222</div>
+	</div>
+	<a href="">这是一个超链接</a>
+	<!--选择符:元素（类型），class（类），ID，特殊。
+		1:类型选择符：
+			HTML标签 》 html body div span strong p..
+		2:ID选择符：（给标签添加一个身份证)
+			<标签 id="id名字"></标签>
+			#id名字{css语句}
+			唯一性
+		3:class选择符:(类选择符)
+			<标签 class="class名称"></div>
+			.classm名称{css语句}+
+			无唯一性，一个元素可有多个class/
+		4:群组选择符：（权重等于其本身）
+			用逗号分隔，把多个选择符组成一组然后一起添加样式	
+		5:包含选择符：（权重等于选择符之和)
+			父元素选择符 子元素选择符{css语句}
+			通过父元素找子元素
+		6:伪类选择符（四个状态书写顺序不能改变）
+			a:link{color:yellow;}
+			a:visited{color:yellow;}
+			a:hover{color:yellow;}
+			a:active{color:yellow;}
+		7:通配符 *
+			选择页面中所有的标签
+	-->
+</body>
+</html>

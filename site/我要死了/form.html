@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form.html</title>
+	<style>
+		textarea{resize:none;}
+	</style>
+</head>
+<body>
+	<form action="" name="" method="post/get`">
+		<input type="text" value="请输入..."><br>
+		<input type="password"><br>&nbsp;
+		<input type="submit" value="登陆">&nbsp;&nbsp;
+		<input type="reset" value="重新输入"><br>
+		<input type="radio" name="和下面保持一致">男
+		<input type="radio" name="和下面保持一致">女<br>
+		<input type="checkbox">篮球
+		<input type="checkbox" checked>足球
+		<input type="checkbox" disabled>玻璃球
+		<input type="button" value="一个按钮">
+    	<select name="birthday" id="">
+    		<option value="1989">1990</option>
+    		<option value="">1991</option>
+    		<option value="">1992</option>
+    		<option value="">1993</option>
+    		<option value="">1994</option>
+    	</select><br>
+    	<textarea name="" id="" cols="30" rows="5"></textarea>
+	</form>
+</body>
+</html>
+<!--
+type去定义某种类型
+value的属性会根据type属性值的变化，功能也不一样。
+
+在单选按钮里面name属性是必须的，并且每一组的单选按钮的name值保持一致！！！
+
+css里面有一个resize:none,阻止用户对textarea进行拖动。
+

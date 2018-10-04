@@ -1,0 +1,60 @@
+@charset 'utf-8';
+/*字符编码格式*/
+/*css reset*/
+html,body,ul,ol,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,input,fieldset,legend,img{margin:0;padding:0;}
+body{font-size:16px;font-family:'微软雅黑';}
+ul,ol,li{list-style:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+a,u{text-decoration:none;}
+img{border:0;display:block;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+input{outline:none;}
+
+#top,.nav-cont,#banner,#news,#case,.link-cont{width:1000px;margin:0 auto;}
+/*top*/
+#top{height:100px;}
+#top h1{width:217px;height:80px;float:left;padding:10px 30px;}
+#top form{width:247px;height:61px;float:right;padding-top:39px;}
+.txt{width:195px;height:26px;border:1px solid #e5e5e5;border-right:0;color:#818181;float:left;}
+.btn{width:30px;height:28px;border:1px solid #e5e5e5;border-left:0;background:url(../images/picture3.jpg);float:left;}
+/*给input的按钮添加边框时，侵占元素原有宽高*/
+
+/*nav*/
+#nav{height:58px;background:#323232;}
+.nav-cont{height:58px;}
+.nav-cont li a{float:left;width:119px;height:58px;border-right:1px solid #4a4a4a;text-align:center;line-height:58px;font-size:12px;color:#fdfdfd;}
+.nav-cont .border0 a{border:0px;}
+.nav-cont .marl a{margin-left:27px;}
+
+/*banner*/
+#banner{height:465px;background:orange;}
+
+/*news*/
+#news{height:269px;}
+.news-l{width:478px;height:204px;float:left;padding-left:22px;padding-top:36px;}
+.news-l h2{font-size:18px;color:#3f4650;line-height:18px;}
+.news-list{margin:23px auto;}
+.news-list li{height:25px;background:url(../images/picture5.jpg) no-repeat left center;width:438px;font-size:12px;line-height:25px;padding-left:12px;}
+.news-list li a{float:left;color:#505050;width:296px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.news-list li span{float:right;color:#959595;}
+
+.news-c{width:197px;height:204px;background:#f1f1f1;float:left;border-right:1px solid #fff;padding:36px 23px 0 20px;}
+.news-c h2{font-size:18px;color:#3d444e;line-height:18px;}
+.news-c .text1{font-size:12px;line-height:25px;color:#4f4f4f;margin:33px 0 15px 0;}
+.news-c .text2{font-size:12px;line-height:24px;color:#969696;}
+
+.news-r{width:180px;height:204px;background:#fbfbfb url(../images/picture7.jpg) no-repeat 142px 136px;float:left;padding:36px 55px 0 24px;}
+.news-r h2{font-size:18px;line-height:18px;color:#181818;}
+.news-r p{font-size:12px;line-height:24px;color:#5b5b5b;margin:21px 0 50px 0;}
+
+/*case*/
+#case{height:275px;}
+#case h2{font-size:18px;line-height:18px;color:#414551;padding-left:22px;}
+.case-box{height:220px;margin-top:19px;}
+.case-box dl{width:210px;float:left;margin:0 20px;}
+.case-box dd{font-size:12px;line-height:24px;color:#525252;padding-top:13px;}
+
+/*friendlink*/
+#friendlink{height:250px;background:#e5e5e5;}
+.link-cont{height:250px;background:orange;}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		.box{width:440px;height:440px;background:#cfc url(images/aiouniya1.jpg);padding:130px;border:5px solid #f99;margin:50px;}
+		p{width:250px;height:250px;background:#ccf;padding:50px;border:5px solid #9f9;}
+		p{box-sizing: border-box;}
+
+		/*
+			padding属性   》  填充         margin   》   外边界
+				1：padding会长在content上。          margin会长在border上。
+				2:padding和margin设置方式：
+					一个值：四周
+					二：上下 左右
+					三：上 左右 下
+				    四：上 右 下 左
+				3：单一方向添加：padding(margin)-left/right/top/bottom:value;
+				4：padding不会对背景图造成影响。                                                 
+				5：padding主要是控制子元素在父元素里面的位置关系 ，padding添加在父元素上。
+				6：margin常见问题： 
+					（1）长在父元素里面第一个子元素设置margin-top，会设置在父元素上。
+					（2）同级并且上下排列的元素，之间的margin值不会叠加，会发生重叠。
+		*/
+		/*
+			box-sizing: border-box;触发怪异盒模型
+			特点：padding值和border值都会在宽高之内显示。
+			应用：常在移动端会用到。
+		*/
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p>文本文本文本文本文本文本文本文本文本文本文本文本文本</p>
+	</div>
+</body>
+</html>
